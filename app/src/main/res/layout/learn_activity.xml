@@ -7,26 +7,42 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
+        android:gravity="center"
         android:text="Learning Makharig ul Haroof"
         android:textSize="22dp"
         android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingHorizontal="15dp"
+        android:text="There are 17 emission points (makhārij al-ḥurūf), located in various regions of: Throat, Tongue, Lips, Nose, Mouth. Below shows a preview of the Makharij and Articulation points from where the the 29 Arabic letters are produced. Tables are matched with figures for the clear understanding of problem."
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-        />
+
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="@+id/textView3"
@@ -35,14 +51,20 @@
 
         <Button
             android:layout_width="160dp"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:layout_marginRight="10dp"
-            android:text="Hello" />
+            android:text="Halqiyah"
+            android:tag="Halqiyah"
+            android:onClick="navigateToDetailScreen"
+            />
 
         <Button
             android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:text="Hello" />
+            android:layout_height="60dp"
+            android:tag="Lahatiyah"
+            android:text="Lahatiyah"
+            android:onClick="navigateToDetailScreen"
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -59,14 +81,20 @@
 
         <Button
             android:layout_width="160dp"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:layout_marginRight="10dp"
-            android:text="Hello" />
+            android:tag="Shajariyah-Haafiyah"
+            android:text="Shajariyah-Haafiyah"
+            android:onClick="navigateToDetailScreen"
+            />
 
         <Button
             android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:text="Hello" />
+            android:layout_height="60dp"
+            android:tag="Tarfiyah"
+            android:text="Tarfiyah"
+            android:onClick="navigateToDetailScreen"
+            />
     </LinearLayout>
 
 
@@ -83,14 +111,20 @@
 
         <Button
             android:layout_width="160dp"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:layout_marginRight="10dp"
-            android:text="Hello" />
+            android:tag="Nit-eeyah"
+            android:text="Nit-eeyah"
+            android:onClick="navigateToDetailScreen"
+            />
 
         <Button
             android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:text="Hello" />
+            android:layout_height="60dp"
+            android:tag="Lisaveyah"
+            android:text="Lisaveyah"
+            android:onClick="navigateToDetailScreen"
+            />
     </LinearLayout>
 
 
@@ -107,14 +141,14 @@
 
         <Button
             android:layout_width="160dp"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:layout_marginRight="10dp"
-            android:text="Hello" />
+            android:tag="Ghunna"
+            android:text="Ghunna"
+            android:onClick="navigateToDetailScreen"
+            />
 
-        <Button
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:text="Hello" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
