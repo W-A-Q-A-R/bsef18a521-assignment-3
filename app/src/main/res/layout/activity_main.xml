@@ -17,9 +17,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="50dp"
         />
-
-
-
+    
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -30,6 +28,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:textColor="@color/black"
+        android:textStyle="bold"
         />
 
     <TextView
@@ -46,6 +45,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.568"
         android:textColor="@color/black"
+        android:textStyle="bold"
 
         />
 
@@ -63,6 +63,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.634"
         android:textColor="@color/black"
+        android:textStyle="bold"
 
         />
 
@@ -75,12 +76,13 @@
         android:layout_marginBottom="50dp"
         >
         <Button
+            android:id="@+id/repoButton"
             android:layout_width="190dp"
             android:layout_height="50dp"
             android:text="Repository"
             android:layout_marginRight="10dp"
+            android:onClick="openWebBrowser"
             />
-
 
         <Button
             android:layout_width="190dp"
