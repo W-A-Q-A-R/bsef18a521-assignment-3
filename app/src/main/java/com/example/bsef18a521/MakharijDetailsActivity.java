@@ -1,15 +1,14 @@
 package com.example.bsef18a521;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.google.android.material.tabs.TabLayout;
+
 
 public class MakharijDetailsActivity extends AppCompatActivity {
 
@@ -61,4 +60,8 @@ public class MakharijDetailsActivity extends AppCompatActivity {
                 break;
         }
     };
+
+    public void goBack(View v){
+     finish();
+    }
 }
