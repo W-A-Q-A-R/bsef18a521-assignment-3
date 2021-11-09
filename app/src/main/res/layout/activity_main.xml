@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="50dp"
         />
-    
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -88,6 +88,8 @@
             android:layout_width="190dp"
             android:layout_height="50dp"
             android:text="Continue to app"
+            android:onClick="navigateToChooseScreen"
+
             />
 
     </LinearLayout>
