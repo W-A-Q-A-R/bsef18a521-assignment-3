@@ -19,6 +19,12 @@ public class choiceActivity extends AppCompatActivity {
         intent.putExtra("value", "hello how are u?");
         startActivity(intent);
     }
+
+    public void navigateToLearnScreen(View v){
+        Intent intent=new Intent(this,LearnActivity.class);
+        intent.putExtra("value", "hello how are u?");
+        startActivity(intent);
+    }
 //
 //    public void navigateToLearnScreen(View v){
 //        Intent intent=new Intent(this,TestActivity.class);
