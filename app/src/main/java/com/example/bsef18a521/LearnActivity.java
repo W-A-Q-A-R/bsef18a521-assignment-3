@@ -20,4 +20,6 @@ public class LearnActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+
+
 }

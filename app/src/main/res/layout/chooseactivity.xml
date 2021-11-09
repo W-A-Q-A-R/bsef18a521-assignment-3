@@ -17,7 +17,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:textStyle="bold"
-        android:textSize="20dp"
+        android:textSize="20sp"
+
         android:textColor="@color/black"
         />
 
@@ -31,6 +32,9 @@
         app:layout_constraintStart_toStartOf="@+id/button"
         app:layout_constraintTop_toBottomOf="@+id/button"
         android:onClick="navigateToLearnScreen"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+
 
         />
 
@@ -44,6 +48,9 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="250dp"
         android:onClick="navigateToTestScreen"
+        android:textColor="@color/black"
+
+        android:textSize="16sp"
         />
 
 
