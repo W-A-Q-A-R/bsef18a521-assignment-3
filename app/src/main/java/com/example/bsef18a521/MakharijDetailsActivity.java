@@ -56,7 +56,6 @@ public class MakharijDetailsActivity extends AppCompatActivity {
             case "Ghunna":
                 image.setImageResource(R.drawable.ghunna);
                 title.setText("Ghunna");
-
                 break;
         }
     };
