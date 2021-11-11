@@ -10,7 +10,7 @@
     <ImageView
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:onClick="goBack"
+        android:onClick="onPreviousClick"
         android:src="@drawable/back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -60,7 +60,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Twenty"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+
+            />
 
         <RadioButton
             android:id="@+id/radio2"
@@ -97,7 +99,7 @@
             android:layout_width="200dp"
             android:layout_height="60dp"
             android:layout_marginRight="10dp"
-            android:text="Previous"
+            android:text="Quit?"
             android:onClick="onPreviousClick"
             android:textColor="@color/black" />
 

@@ -20,6 +20,8 @@ public class LearnActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-
+    public void onGoBack(View v){
+            finish();
+    }
 
 }

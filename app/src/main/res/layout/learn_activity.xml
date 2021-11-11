@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="40dp"
-        android:onClick="goBack"
+        android:onClick="onGoBack"
         />
 
     <TextView
