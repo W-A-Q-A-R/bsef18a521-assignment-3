@@ -14,16 +14,22 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class TestActivity extends AppCompatActivity {
 
-    String Questions[][] = {{"1. How many prophets are there?", "100000", "200000", "300000", "400000"}, {"2. How many prophets are there?", "500000", "600000", "700000", "800000"}, {"How many prophets are there?", "120000", "220000", "320000", "420000"}, {"How many prophets are there?", "130000", "230000", "330000", "430000"}, {"5. How many prophets are there?", "100000", "200000", "300000", "400000"}, {"6. How many prophets are there?", "100000", "200000", "300000", "400000"}};
+    String Questions[][] = {
+            {"1. Jahan say makhraj ada kiya jata hai , woh jaga ___________ kehlai jati hai ?", "Tajweed", "Tarteel", "Makhraj", "Huroof"},
+            {"2. How many haroof emerge from halq?", "6", "4", "3", "none of above"},
+            {"3. How many letters emerge from upper throat?", "2", "3", "4", "none"},
+            {"4. Is lafz main say Huroof Ash Shafawiyyah kon say hain ? الزلزلة", "ل", "ز", "ت", "None of these"},
+            {"5. Kon say huroof Zaban ki nook or ooper neechay k daanton k qareeb a janay say ada hote hain ?", "ل ن ر", "ت د ط", "ز س ص", "ء ہ"},
+            {"6. Monh k khali hissay say ada kiye janay walay huroof __________ hain .", "Huroof Al halaqiyyah", "Huroof Al Maddiyyah", "Huroof Al Lahatiyah", "Huroof Ash Shafawiyyah"}};
 
-    String CorrectOptions[] = {"100000", "100000", "100000", "100000", "100000", "100000"};
+    String CorrectOptions[] = {"Tajweed", "6", "2", "None of these", "ز س ص", "Huroof Al Maddiyyah"};
 
 
     private RadioButton radioButton;
     private Button btnDisplay;
     int i = 0;
-    int correct=0;
-    int incorrect=0;
+    int correct = 0;
+    int incorrect = 0;
 
 
     @Override
@@ -53,9 +59,9 @@ public class TestActivity extends AppCompatActivity {
             String radioText = (String) radioButton.getText();
             Log.d("--string value before--", String.valueOf(Questions.length));
             if (radioText == CorrectOptions[i]) {
-                correct=correct+1;
+                correct = correct + 1;
             } else if (radioText != CorrectOptions[i]) {
-                incorrect=incorrect+1;
+                incorrect = incorrect + 1;
             }
             TextView questionText = (TextView) findViewById(R.id.textView7);
             RadioButton radio1 = (RadioButton) findViewById(R.id.radio1);
@@ -75,7 +81,7 @@ public class TestActivity extends AppCompatActivity {
                 radio4.setText(Questions[i][4]);
                 radioGroup.clearCheck();
             } else {
-                Intent intent=new Intent(this,ResultActivity.class);
+                Intent intent = new Intent(this, ResultActivity.class);
                 Bundle extras = new Bundle();
                 extras.putString("correct", String.valueOf(correct));
                 extras.putString("incorrect", String.valueOf(incorrect));

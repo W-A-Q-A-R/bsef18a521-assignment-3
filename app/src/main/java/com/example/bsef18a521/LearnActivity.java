@@ -13,15 +13,15 @@ public class LearnActivity extends AppCompatActivity {
         setContentView(R.layout.learn_activity);
     }
 
-    public void navigateToDetailScreen(View v){
-        Intent intent=new Intent(this,MakharijDetailsActivity.class);
+    public void navigateToDetailScreen(View v) {
+        Intent intent = new Intent(this, MakharijDetailsActivity.class);
         String buttonType = v.getTag().toString();
         intent.putExtra("buttonType", buttonType);
         startActivity(intent);
     }
 
-    public void onGoBack(View v){
-            finish();
+    public void onGoBack(View v) {
+        finish();
     }
 
 }

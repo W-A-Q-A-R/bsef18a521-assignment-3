@@ -1,13 +1,13 @@
 package com.example.bsef18a521;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 
 
 public class MakharijDetailsActivity extends AppCompatActivity {
@@ -17,13 +17,13 @@ public class MakharijDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_makharij_details);
         Intent intent = getIntent();
-        String buttonType=intent.getStringExtra("buttonType");
-        Log.d("buttonType",buttonType);
+        String buttonType = intent.getStringExtra("buttonType");
+        Log.d("buttonType", buttonType);
 
-        TextView title=(TextView) findViewById(R.id.mainTitle);
-        ImageView image=(ImageView) findViewById(R.id.mainImage);
+        TextView title = (TextView) findViewById(R.id.mainTitle);
+        ImageView image = (ImageView) findViewById(R.id.mainImage);
 
-        switch (buttonType){
+        switch (buttonType) {
             case "Halqiyah":
                 image.setImageResource(R.drawable.halqiyah);
                 title.setText("Halqiyah");
@@ -58,9 +58,11 @@ public class MakharijDetailsActivity extends AppCompatActivity {
                 title.setText("Ghunna");
                 break;
         }
-    };
+    }
 
-    public void goBack(View v){
-     finish();
+    ;
+
+    public void goBack(View v) {
+        finish();
     }
 }

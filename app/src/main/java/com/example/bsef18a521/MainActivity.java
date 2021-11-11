@@ -18,18 +18,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void openWebBrowser(View v){
-        Uri repo= Uri.parse("https://github.com/W-A-Q-A-R/bsef18a521-assignment-3");
-        Intent intent =new Intent(Intent.ACTION_VIEW, repo);
+    public void openWebBrowser(View v) {
+        Uri repo = Uri.parse("https://github.com/W-A-Q-A-R/bsef18a521-assignment-3");
+        Intent intent = new Intent(Intent.ACTION_VIEW, repo);
         startActivity(intent);
     }
 
-    public void navigateToChooseScreen(View v){
-        Intent intent=new Intent(this,choiceActivity.class);
+    public void navigateToChooseScreen(View v) {
+        Intent intent = new Intent(this, choiceActivity.class);
         intent.putExtra("value", "hello how are u?");
         startActivity(intent);
     }
-
 
 
 }

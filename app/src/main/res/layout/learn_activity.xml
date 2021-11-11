@@ -1,56 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
-    >
+    android:background="@drawable/background">
 
 
     <ImageView
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:src="@drawable/back"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="40dp"
         android:onClick="onGoBack"
-        />
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
         android:gravity="center"
         android:text="Learning Makharig ul Haroof"
+        android:textColor="@color/black"
         android:textSize="22dp"
         android:textStyle="bold"
-        android:layout_marginTop="90dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textColor="@color/black"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:gravity="center"
         android:paddingHorizontal="15dp"
         android:text="There are 17 emission points (makhārij al-ḥurūf), located in various regions of: Throat, Tongue, Lips, Nose, Mouth. Below shows a preview of the Makharij and Articulation points from where the the 29 Arabic letters are produced. Tables are matched with figures for the clear understanding of problem."
+        android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="30dp"
-        android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
 
 
     <LinearLayout
@@ -69,22 +64,20 @@
             android:layout_width="160dp"
             android:layout_height="60dp"
             android:layout_marginRight="10dp"
-            android:text="Halqiyah"
-            android:tag="Halqiyah"
             android:onClick="navigateToDetailScreen"
+            android:tag="Halqiyah"
+            android:text="Halqiyah"
             android:textColor="@color/black"
-            android:textSize="16sp"
-            />
+            android:textSize="16sp" />
 
         <Button
             android:layout_width="160dp"
             android:layout_height="60dp"
+            android:onClick="navigateToDetailScreen"
             android:tag="Lahatiyah"
             android:text="Lahatiyah"
-            android:onClick="navigateToDetailScreen"
             android:textColor="@color/black"
-            android:textSize="16sp"
-            />
+            android:textSize="16sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -103,22 +96,20 @@
             android:layout_width="160dp"
             android:layout_height="60dp"
             android:layout_marginRight="10dp"
+            android:onClick="navigateToDetailScreen"
             android:tag="Shajariyah-Haafiyah"
             android:text="Shajariyah-Haafiyah"
-            android:onClick="navigateToDetailScreen"
             android:textColor="@color/black"
-            android:textSize="16sp"
-            />
+            android:textSize="16sp" />
 
         <Button
             android:layout_width="160dp"
             android:layout_height="60dp"
+            android:onClick="navigateToDetailScreen"
             android:tag="Tarfiyah"
             android:text="Tarfiyah"
-            android:onClick="navigateToDetailScreen"
             android:textColor="@color/black"
-            android:textSize="16sp"
-            />
+            android:textSize="16sp" />
     </LinearLayout>
 
 
@@ -137,22 +128,20 @@
             android:layout_width="160dp"
             android:layout_height="60dp"
             android:layout_marginRight="10dp"
+            android:onClick="navigateToDetailScreen"
             android:tag="Nit-eeyah"
             android:text="Nit-eeyah"
-            android:onClick="navigateToDetailScreen"
             android:textColor="@color/black"
-            android:textSize="16sp"
-            />
+            android:textSize="16sp" />
 
         <Button
             android:layout_width="160dp"
             android:layout_height="60dp"
+            android:onClick="navigateToDetailScreen"
             android:tag="Lisaveyah"
             android:text="Lisaveyah"
-            android:onClick="navigateToDetailScreen"
             android:textColor="@color/black"
-            android:textSize="16sp"
-            />
+            android:textSize="16sp" />
     </LinearLayout>
 
 
@@ -160,9 +149,9 @@
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:orientation="horizontal"
-        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout4"
         app:layout_constraintStart_toStartOf="@+id/linearLayout4"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
@@ -171,12 +160,11 @@
             android:layout_width="160dp"
             android:layout_height="60dp"
             android:layout_marginRight="10dp"
+            android:onClick="navigateToDetailScreen"
             android:tag="Ghunna"
             android:text="Ghunna"
-            android:onClick="navigateToDetailScreen"
             android:textColor="@color/black"
-            android:textSize="16sp"
-            />
+            android:textSize="16sp" />
 
 
     </LinearLayout>

@@ -1,4 +1,5 @@
 package com.example.bsef18a521;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -14,23 +15,21 @@ public class choiceActivity extends AppCompatActivity {
         setContentView(R.layout.chooseactivity);
     }
 
-    public void navigateToTestScreen(View v){
-        Intent intent=new Intent(this,TestActivity.class);
+    public void navigateToTestScreen(View v) {
+        Intent intent = new Intent(this, TestActivity.class);
         intent.putExtra("value", "hello how are u?");
         startActivity(intent);
     }
 
-    public void navigateToLearnScreen(View v){
-        Intent intent=new Intent(this,LearnActivity.class);
+    public void navigateToLearnScreen(View v) {
+        Intent intent = new Intent(this, LearnActivity.class);
         intent.putExtra("value", "hello how are u?");
         startActivity(intent);
     }
-//
-//    public void navigateToLearnScreen(View v){
-//        Intent intent=new Intent(this,TestActivity.class);
-//        intent.putExtra("value", "hello how are u?");
-//        startActivity(intent);
-//    }
+
+    public void onBackButtonPress(View v) {
+        finish();
+    }
 
 
 }
